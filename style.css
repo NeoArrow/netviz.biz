@@ -166,6 +166,159 @@ header.scrolled{transform:translateY(-6px);box-shadow:0 10px 40px rgba(0,170,255
   .hero{height:72vh;padding:20px}
 }
 
+
+/* Mobile view: vertical list style */
+/* Hide menu icon on desktop */
+/* Desktop view – normal nav */
+/* Desktop navigation */
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Side Panel */
+.side-panel {
+  position: fixed;
+  top: 0;
+  right: -300px; /* hidden initially */
+  width: 280px;
+  height: 100%;
+  /* background: #fff; */
+  backdrop-filter: blur(15px);
+  box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: right 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* smooth 3D feel */
+  transform: perspective(1000px) rotateY(-10deg);
+  z-index: 2000;
+}
+
+/* Active state slides panel in */
+.side-panel.active {
+  right: 0;
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+/* Links inside panel */
+.side-panel a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #bababa;
+  padding: 10px 15px;
+  border-radius: 6px;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.4s ease;
+}
+
+/* Animate links when panel active */
+.side-panel.active a {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Stagger animation */
+.side-panel.active a:nth-child(2) { transition-delay: 0.1s; }
+.side-panel.active a:nth-child(3) { transition-delay: 0.2s; }
+.side-panel.active a:nth-child(4) { transition-delay: 0.3s; }
+.side-panel.active a:nth-child(5) { transition-delay: 0.4s; }
+
+/* Hover effect for links */
+.side-panel a:hover {
+  background: #f0f0f077;
+
+  transform: scale(0.35s);
+  color: #007bff;
+}
+
+/* Close button */
+.close-btn {
+  font-size: 28px;
+  color: #333;
+  align-self: flex-end;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+  color: red;
+}
+
+/* Overlay background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: none;
+  z-index: 1500;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 900px) {
+  .nav-link { display: none; }
+  .menu-icon { display: flex; }
+  .hero-inner{margin-top: 30px;}
+}
+
+
+/*menu icon */
+
+.menu-icon {
+
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon span {
+  display: block;
+  height: 3px;
+  background: #333;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+
+/* Hover animation: scale and slight rotation */
+.menu-icon:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+/* Clicked / active state for X animation */
+.menu-icon.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+
+
+
+
+
+
+
+
 /* animations */
 @keyframes pulse{0%{transform:scale(0.9);opacity:.8}50%{transform:scale(1);opacity:1}100%{transform:scale(0.9);opacity:.8}}
 
