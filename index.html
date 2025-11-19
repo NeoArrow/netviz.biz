@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NETVIZ – Professional Networking Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <canvas id="cursorTrail"></canvas>
+
+  <!-- Loading overlay -->
+  <div id="loader" class="loader">
+    <div class="ring"></div>
+    <div class="loader-text">NETVIZ</div>
+  </div>
+
+  <header id="header" class="glass">
+    <div class="brand-wrapper">
+      <div class="brand">NET<div style="color:white">VIZ</div>
+      </div>
+      <canvas id="brand-particles"></canvas>
+    </div>
+    <nav class="nav">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#products" class="nav-link">Products</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="hero">
+
+      <div class="hero-bg"></div> <!-- animated background layer -->
+
+      <div class="hero-inner">
+        <h1 class="hero-title">Professional Networking Solutions</h1>
+        <p class="hero-sub">We build secure, scalable and high‑performance networks for companies of all sizes.</p>
+        <a class="btn" href="#services">
+          <span>Explore Services</span>
+          <canvas class="btn-particles"></canvas>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <h2 class="section-title">About Us</h2>
+      <div class="about-grid">
+        <img class="about-img" src="https://i.ibb.co/9rbM09z/networking-team.jpg" alt="team">
+        <div class="about-text">
+          <p>NETVIZ delivers advanced IT infrastructure, enterprise routing, switching, wireless and security solutions.
+          </p>
+          <p>We work with enterprises, governments and data‑centers across the world to deliver resilient networks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section reveal">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+        <div class="card service-card reveal" id="card">
+          <h3 id="servicetitle"> Network troubleshooting and optimization</h3>
+          <!-- <p>High‑performance LAN/WAN architecture for enterprises.</p> -->
+          <p id="sevicecontent" style="display: none;">
+            <b> • Here are some tips for network optimization and troubleshooting:</b><br><br>
+            1.Use ipconfig: Open the command prompt and type “ipconfig” to check network settings.<br><br>
+            2.Check the hardware: Ensure all hardware is connected properly and working.<br><br>
+            3.Perform a DNS check: Verify domain name resolution.<br><br>
+            4.Set up Quality of Service (QoS): Manage bandwidth usage.<br><br>
+            5.Adjust network setup, divide into segments, and add intrusion detection systems.<br><br>
+            6.Update network hardware, implement load balancing, optimize network protocols, and increase redundancy.
+            <br><br>
+            7.Use ping and tracert: Test network connectivity and trace routes.
+          </p>
+        </div>
+        <div class="card service-card reveal" id="card">
+          <h3 id="servicetitle">Wired & wireless setup and configuration</h3>
+          <!-- <p>Advanced threat protection and secure access control.</p> -->
+        </div>
+        <div class="card service-card reveal" id="card">
+          <h3 id="servicetitle">CCTV installation, design, and maintenance</h3>
+          <!-- <p>Optimized compute environments with redundancy.</p> -->
+        </div>
+        <div class="card service-card reveal" id="card">
+          <h3 id="servicetitle"> Access control system setup and integration</h3>
+          <!-- <p>High‑density Wi‑Fi 6 networks for offices & campuses.</p> -->
+        </div>
+        <div class="card service-card reveal" id="card">
+          <h3 id="servicetitle">Network audits, upgrades, and performance improvements</h3>
+          <!-- <p>High‑density Wi‑Fi 6 networks for offices & campuses.</p> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section reveal">
+      <h2 class="section-title">Products</h2>
+      <div class="products-grid">
+        <div class="card product-card reveal">
+          <img src="src/img/products/image (4).webp" alt="Firewalls" loading="lazy">
+          <h3>Firewalls</h3>
+          <p>Fortinet and Sonicwall</p>
+        </div>
+        <div class="card product-card reveal">
+          <img src="src/img/products/image (1).webp" alt="Security surveillance" loading="lazy">
+          <h3>Security surveillance</h3>
+          <p>Hikvision,Tiandy</p>
+        </div>
+        <div class="card product-card reveal">
+          <img src="src/img/products/image (2).webp" alt="wifi" loading="lazy">
+          <h3>Wireless</h3>
+          <p>Cisco,Aruba,Grandstream,<br>Netgear</p>
+        </div>
+        <div class="card product-card reveal">
+          <img src="src/img/products/image (3).webp" alt="wifi" loading="lazy">
+          <h3>Switches</h3>
+          <p>Cisco,Aruba,Grandstream,<br>Netgear</p>
+        </div>
+        <div class="card product-card reveal">
+          <img src="src/img/products/image (5).webp" alt="wifi" loading="lazy">
+          <h3>Access control Systems</h3>
+          <p>Hikvision,Zktech</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <div class="icon-wrap" aria-hidden="true">
+            <!-- phone svg -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12 1.05.36 2.07.71 3.04a2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 6 6l1.04-1.04a2 2 0 0 1 2.11-.45c.97.35 1.99.59 3.04.71A2 2 0 0 1 22 16.92z" />
+            </svg>
+          </div>
+          <h3>Phone</h3>
+          <p class="muted">Support available 24/7</p>
+          <p class="strong">+94 xx xxx xxxx</p>
+        </div>
+
+        <div class="contact-card reveal">
+          <div class="icon-wrap" aria-hidden="true">
+            <!-- mail svg -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 4h16v16H4z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </div>
+          <h3>Email</h3>
+          <p class="muted">General inquiries</p>
+          <p class="strong">support@netviz.biz</p>
+        </div>
+
+        <div class="contact-card reveal">
+          <div class="icon-wrap" aria-hidden="true">
+            <!-- map-pin svg -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <h3>Location</h3>
+          <p class="muted">Offices</p>
+          <p class="strong">Kalutara • Sri Lanka</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 NETVIZ • All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
