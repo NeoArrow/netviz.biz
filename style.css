@@ -451,4 +451,14 @@ header.scrolled{transform:translateY(-6px);box-shadow:0 10px 40px rgba(0,170,255
 .fade-in {
   opacity: 1;
 }
+/* Hide controls for WebKit browsers (Chrome, Edge, Safari) */
+video::-webkit-media-controls {
+  display: none;
+}
+
+/* Remove default controls */
+video {
+  pointer-events: none;   /* disables mouse interactions */
+}
+
 
