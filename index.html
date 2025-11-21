@@ -17,22 +17,23 @@
   <div id="loader" class="loader">
     <div class="ring"></div>
     <div class="loader-text">NETVIZ</div>
-    <p style="font-size: small; color: rgba(165, 165, 165, 0.672); text-align: center;">the Site is loading...<br>Don`t close the window. 
+    <p style="font-size: small; color: rgba(165, 165, 165, 0.672); text-align: center;">the Site is loading...<br>Don`t
+      close the window.
     </p>
   </div>
 
-<div id="sidePanel" class="side-panel">
+  <div id="sidePanel" class="side-panel">
 
-      <div id="closeBtn" class="close-btn">&times;</div>
+    <div id="closeBtn" class="close-btn">&times;</div>
 
-  <a href="#about">About</a>
+    <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#products">Products</a>
     <a href="#contact">Contact</a>
-</div>
+  </div>
 
-<!-- Overlay Dark Background -->
-<div id="overlay" class="overlay"></div>
+  <!-- Overlay Dark Background -->
+  <div id="overlay" class="overlay"></div>
 
   <header id="header" class="glass">
     <div class="brand-wrapper">
@@ -42,7 +43,7 @@
     </div>
     <nav class="nav">
 
-     <div class="menu-icon" id="menuIcon">☰</div>
+      <div class="menu-icon" id="menuIcon">☰</div>
 
 
       <a href="#about" class="nav-link">About</a>
@@ -71,7 +72,19 @@
     <section id="about" class="section reveal">
       <h2 class="section-title">About Us</h2>
       <div class="about-grid">
-        <img class="about-img" src="https://i.ibb.co/9rbM09z/networking-team.jpg" alt="team">
+        <!-- <img class="about-img" src="https://i.ibb.co/9rbM09z/networking-team.jpg" alt="team"> -->
+
+
+
+
+
+        <div id="videoContainer">
+          <video id="videoPlayer" preload="metadata" class="about-img" controls autoplay muted playsinline>
+          </video>
+        </div>
+
+
+
         <div class="about-text">
           <p>NETVIZ delivers advanced IT infrastructure, enterprise routing, switching, wireless and security solutions.
           </p>
@@ -146,6 +159,21 @@
           <p>Hikvision,Zktech</p>
         </div>
       </div>
+    </section>
+
+    <section id="slide_show" class="slide_show">
+
+      <marquee>
+        <div class="a"><img src="src/img/logos/1.png"></div>
+        <div class="a"><img src="src/img/logos/2.png"></div>
+        <div class="a"><img src="src/img/logos/3.png"></div>
+        <div class="a"><img src="src/img/logos/4.png"></div>
+        <div class="a"><img src="src/img/logos/5.png"></div>
+        <div class="a"><img src="src/img/logos/6.jpg"></div>
+        <div class="a"><img src="src/img/logos/7.png"></div>
+        <div class="a"><img src="src/img/logos/8.png"></div>
+        <div class="a"><img src="src/img/logos/9.png"></div>
+      </marquee>
     </section>
 
     <section id="contact" class="section reveal">

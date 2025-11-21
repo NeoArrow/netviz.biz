@@ -370,3 +370,63 @@ const service_title = document.getElementById('servicetitle');
         
 
     });
+
+
+    // logo side show animate
+
+let angle = 0;
+const cube = document.getElementById("cube");
+const cube2 = document.getElementById("cube2");
+
+    setInterval(() => {
+  angle -= 90;
+  cube.style.transform = `rotateY(${angle}deg)`;
+  cube2.style.transform = `rotateY(${angle}deg)`;
+}, 3000);
+
+
+
+
+//video payer twist
+
+
+  const videoPlayer = document.getElementById("videoPlayer");
+
+  // Playlist
+  const videos = [
+    "src/video/2.mp4",
+    "src/video/3.mp4",
+  ];
+let index = 0;
+
+// Start the first video
+videoPlayer.src = videos[index];
+videoPlayer.load();
+videoPlayer.play().catch(() => {});
+
+// When video ends:
+videoPlayer.addEventListener("ended", () => {
+
+  videoPlayer.classList.add("fade-out");
+
+  setTimeout(() => {
+
+    // Next video index
+    index = (index + 1) % videos.length;
+
+    videoPlayer.src = videos[index];
+    videoPlayer.load();
+
+    // Play next video
+    videoPlayer.play().catch(() => {});
+
+    // Fade in effect
+    videoPlayer.classList.remove("fade-out");
+    videoPlayer.classList.add("fade-in");
+
+    setTimeout(() => {
+      videoPlayer.classList.remove("fade-in");
+    }, 600);
+
+  }, 600);
+});
