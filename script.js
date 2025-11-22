@@ -350,26 +350,26 @@ document.querySelectorAll('.btn').forEach(btn => {
 
 //card hover disply content
 
-const servicecard = document.getElementById('card');
-const service_para = document.getElementById('sevicecontent');
-const service_title = document.getElementById('servicetitle');
+// const servicecard = document.getElementById('card');
+// const service_para = document.getElementById('sevicecontent');
+// const service_title = document.getElementById('servicetitle');
 
-    servicecard.addEventListener('mouseover', () => {
-        servicecard.style.borderLeft = '5px solid blue';
-        service_para.style.display = 'block';
-        servicecard.style.cursor = 'pointer';
-        service_title.style.textShadow = '0px 0px 10px #ae00ff87';
-        service_title.style.textAlign = 'center';
-    });
+//     servicecard.addEventListener('mouseover', () => {
+//         servicecard.style.borderLeft = '5px solid blue';
+//         service_para.style.display = 'block';
+//         servicecard.style.cursor = 'pointer';
+//         service_title.style.textShadow = '0px 0px 10px #ae00ff87';
+//         service_title.style.textAlign = 'center';
+//     });
 
-    servicecard.addEventListener('mouseout', () => {
-        service_para.style.display='none';
-        servicecard.style.borderLeft = 'none';
-        service_title.style.textShadow = 'none';
-        service_title.style.textAlign = 'left';
+//     servicecard.addEventListener('mouseout', () => {
+//         service_para.style.display='none';
+//         servicecard.style.borderLeft = 'none';
+//         service_title.style.textShadow = 'none';
+//         service_title.style.textAlign = 'left';
         
 
-    });
+//     });
 
 
     // logo side show animate

@@ -159,6 +159,30 @@ header.scrolled{transform:translateY(-6px);box-shadow:0 10px 40px rgba(0,170,255
 /* footer */
 .footer{padding:28px;text-align:center;color:rgba(255,255,255,0.7);margin-top:40px;border-top:1px solid rgba(255,255,255,0.02)}
 
+
+
+
+.service-card{
+  background: url('src/img/bg/2.webp');
+}
+
+.service-card:hover{
+  border-left: 2px solid rgb(0, 140, 255);
+  border-right: 2px solid rgb(0, 140, 255);
+}
+
+
+#servicetitle{
+  /* position: absolute; */
+  top: 0;
+  text-align: center;
+  align-self: center;
+
+}
+
+
+
+
 /* responsive */
 @media (max-width:900px){
   .about-grid{grid-template-columns:1fr;gap:18px}
@@ -433,6 +457,7 @@ header.scrolled{transform:translateY(-6px);box-shadow:0 10px 40px rgba(0,170,255
 
 #videoContainer {
   position: relative;
+
 }
 
 #videoPlayer {
@@ -458,5 +483,3 @@ video::-webkit-media-controls {
 video {
   pointer-events: none;   /* disables mouse interactions */
 }
-
-
