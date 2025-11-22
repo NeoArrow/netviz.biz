@@ -433,8 +433,6 @@ header.scrolled{transform:translateY(-6px);box-shadow:0 10px 40px rgba(0,170,255
 
 #videoContainer {
   position: relative;
-  width: 640px;
-  height: 360px;
 }
 
 #videoPlayer {
