@@ -3,20 +3,14 @@
 
 <head>
   <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "NETVIZ",
-    "url": "https://netviz.biz",
-    "logo": "https://netviz.biz/src/img/logos/logo1.png"
-    "telephone": "+94 77 418 7624",
-    "email": "support@netviz.biz"
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "LK"
-      },
-    }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NETVIZ",
+  "url": "https://netviz.biz",
+  "logo": "https://netviz.biz/src/img/logos/logo1.png"
+}
+</script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>NETVIZ – Professional Networking Solutions</title>
@@ -92,67 +86,81 @@
       <div class="about-grid">
         <!-- <img class="about-img" src="https://i.ibb.co/9rbM09z/networking-team.jpg" alt="team"> -->
 
-
-
-
-
         <div id="videoContainer">
           <video id="videoPlayer" preload="metadata" class="about-img" autoplay muted playsinline>
           </video>
         </div>
 
-
-
         <div class="about-text">
           <p>NETVIZ delivers advanced IT infrastructure, enterprise routing, switching, wireless and security solutions.
           </p>
-          <p>We work with enterprises, governments and data‑centers across the world to deliver resilient networks.</p>
+          <p style="margin-bottom: 30px;">We work with enterprises, governments and data‑centers across the world to deliver resilient networks.</p>
+
+          <div class="more-a" style="width: 100%; align-items: center; text-align: center;">
+          <a href="pages/about.html" class="more-about"  >See More 🧐</a>
+        </div>
+
         </div>
       </div>
     </section>
 
     <section id="services" class="section reveal">
       <h2 class="section-title">Our Services</h2>
-      <div class="services-grid">
-        <a href="service.html#1" class="card service-card reveal" id="card" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-         url('src/img/bg/s2.webp');background-size: cover; text-decoration: none;color: white;">
-          <h3 id="servicetitle"> Network troubleshooting and optimization</h3>
-          <!-- <p>High‑performance LAN/WAN architecture for enterprises.</p> -->
-          <!-- <p id="sevicecontent" style="display: none;">
-            <b> • Here are some tips for network optimization and troubleshooting:</b><br><br>
-            1.Use ipconfig: Open the command prompt and type “ipconfig” to check network settings.<br><br>
-            2.Check the hardware: Ensure all hardware is connected properly and working.<br><br>
-            3.Perform a DNS check: Verify domain name resolution.<br><br>
-            4.Set up Quality of Service (QoS): Manage bandwidth usage.<br><br>
-            5.Adjust network setup, divide into segments, and add intrusion detection systems.<br><br>
-            6.Update network hardware, implement load balancing, optimize network protocols, and increase redundancy.
-            <br><br>
-            7.Use ping and tracert: Test network connectivity and trace routes.
-          </p> -->
-        </a>
-        <a href="service.html#2" class="card service-card reveal" id="card" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-         url('src/img/bg/s1.webp'); text-decoration: none;color: white;">
-          <!-- <img src="src/img/products/image (4).webp" alt="Firewalls" loading="lazy"> -->
 
-          <h3 id="servicetitle">Wired & wireless setup and configuration</h3>
-          <!-- <p>Advanced threat protection and secure access control.</p> -->
-        </a>
-        <a href="service.html#3" class="card service-card reveal" id="card" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-         url('src/img/bg/s4.webp'); text-decoration: none;color: white;">
-          <h3 id="servicetitle">CCTV installation, design, and maintenance</h3>
-          <!-- <p>Optimized compute environments with redundancy.</p> -->
-        </a>
-        <a href="service.html#4" class="card service-card reveal" id="card" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+      <div class="services-grid">
+
+      <a href="pages/service.html#1" class="card service-card reveal" id="card" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+         url('src/img/bg/s1.webp'); text-decoration: none;color: white;" class="service-card">
+        <div class="service-icon">🛠️</div>
+        <h3>Network Troubleshooting & Optimization</h3>
+        <p>
+          Diagnose, repair, and fine-tune networks to achieve peak speed,
+          stability, and performance.
+        </p>
+      </a>
+
+      <a href="pages/service.html#2" class="card service-card reveal" id="card" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+         url('src/img/bg/s2.webp'); text-decoration: none;color: white;">
+        <div class="service-icon">🔌</div>
+        <h3>Wired & Wireless Setup</h3>
+        <p>
+          Complete LAN, WiFi, and hybrid network setup including routers,
+          switches, and secure wireless coverage.
+        </p>
+      </a>
+
+      <a href="pages/service.html#3" class="card service-card reveal" id="card" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
          url('src/img/bg/s3.webp'); text-decoration: none;color: white;">
-          <h3 id="servicetitle"> Access control system setup and integration</h3>
-          <!-- <p>High‑density Wi‑Fi 6 networks for offices & campuses.</p> -->
-        </a>
-        <a href="service.html#5" class="card service-card reveal" id="card" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+        <div class="service-icon">📹</div>
+        <h3>CCTV Installation & Maintenance</h3>
+        <p>
+          Professional CCTV planning, camera mounting, configuration, and
+          routine monitoring services.
+        </p>
+      </a>
+
+      <a href="pages/service.html#4" class="card service-card reveal" id="card" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+         url('src/img/bg/s4.webp'); text-decoration: none;color: white;">
+        <div class="service-icon">🔒</div>
+        <h3>Access Control Systems</h3>
+        <p>
+          Door access, biometric authentication, and integrated security 
+          solutions for homes & businesses.
+        </p>
+      </a>
+
+      <a href="pages/service.html#5" class="card service-card reveal" id="card" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
          url('src/img/bg/s5.webp'); text-decoration: none;color: white;">
-          <h3 id="servicetitle">Network audits, upgrades, and performance improvements</h3>
-          <!-- <p>High‑density Wi‑Fi 6 networks for offices & campuses.</p> -->
-        </a>
-      </div>
+        <div class="service-icon">📡</div>
+        <h3>Network Audits & Upgrades</h3>
+        <p>
+          Full network assessment, modernization, and upgrade planning for 
+          better speed, stability, and security.
+        </p>
+      </a>
+
+    </div>
+  </div>
     </section>
 
     <section id="products" class="section reveal">
