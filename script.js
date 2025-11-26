@@ -172,7 +172,7 @@ function changeBackground() {
 }
 
 changeBackground();
-setInterval(changeBackground, 3000); // every 7 seconds
+setInterval(changeBackground, 5000); // every 5 seconds
 
 
 
