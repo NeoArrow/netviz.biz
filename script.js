@@ -402,3 +402,38 @@ videoPlayer.addEventListener("ended", () => {
 
   }, 600);
 });
+
+
+// clients section
+
+const clientsMenu = [
+  {name:'Radisson Collection<br>( Thalpe )', logo:'src/img/logos/rct.webp' },
+  {name:'Gflock<br><br>', logo:'src/img/logos/gflock.png' },
+  {name:'Philip Hospital<br>( Kalutara )', logo:'src/img/logos/nph.jpg' },
+  {name:'Hotel Maradha<br><br>', logo:'src/img/logos/maradha.jpg' },
+  {name:'Mand kind <br>International', logo:'src/img/logos/mkit.webp' },
+  {name:'EZY Car wash<br>( Kalutara)', logo:'src/img/logos/ezcw.png' },
+  {name:'Maritime placements<br> pvt ltd', logo :'src/img/logos/mpl.webp'},
+  {name:'Sun & Sea Hotel<br>( Galle )', logo :'src/img/logos/sns.png' }
+];
+
+const clientsSection = document.getElementById('clients_list')
+const clientsSection2 = document.getElementById('clients_list2')
+
+
+clientsSection.innerHTML = clientsMenu.map((item,index)=>{
+  return (`
+      <div class='client-card' key=${index}>
+        <p class='client-name'>${item.name}</p>
+        <div class='clogo-bg'><img class='client-logo' src='${item.logo}'/></div>
+      </div>
+    `);
+}).join('')
+clientsSection2.innerHTML = clientsMenu.map((item,index)=>{
+  return (`
+      <div class='client-card'  key=${index}>
+        <p class='client-name'>${item.name}</p>
+        <div class='clogo-bg'><img class='client-logo' src='${item.logo}'/></div>
+      </div>
+    `);
+}).join('')
